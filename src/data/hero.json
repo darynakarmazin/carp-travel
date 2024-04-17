@@ -1,14 +1,7 @@
 {
-  "title": "Uncover Carpathianʼs Secrets",
-  "cities": [
-    "Hoverla",
-    "Yaremche",
-    "Zakarpattia",
-    "Vorokhta",
-    "Synevyr Lake",
-    "Bukovel"
-  ],
-  "slogan": "7 DAYS JOURNEY",
+  "title": ["Uncover", "Carpathianʼs Secrets"],
+  "cities": "Hoverla / Yaremche / Zakarpattia / Vorokhta /  Synevyr Lake / Bukovel",
+  "slogan": ["7", "DAYS", "JOURNEY"],
   "description": "We offer you unforgettable trips to the most beautiful parts of the Carpathians. Enjoy stunning views, exciting expeditions, and the best service!",
   "buttonText": "JOIN NOW"
 }
