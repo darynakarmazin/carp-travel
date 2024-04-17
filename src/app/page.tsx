@@ -1,5 +1,9 @@
+import About from "@/components/About/About";
+import Career from "@/components/Career/Career";
+import Gallery from "@/components/Gallery/Gallery";
 import Header from "@/components/Header/Header";
 import Hero from "@/components/Hero/Hero";
+import Services from "@/components/Services/Services";
 
 export default function Home() {
   return (
@@ -7,13 +11,11 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        {/*<About />
-        <MindMap />
-        <FAQ />
-        <Arts />
-        <Mint /> */}
+        <About />
+        <Services />
+        <Career />
+        <Gallery />
       </main>
-      {/* <Footer /> */}
     </>
   );
 }
