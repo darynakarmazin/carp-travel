@@ -40,7 +40,7 @@ function Hero() {
                 {description}
               </p>
               <Link
-                className={`${"join-btn"} flex justify-center w-full py-4 px-16 bg-white bg-opacity-5 border border-white text-[32px] font-bold`}
+                className={`${"join-btn"} flex justify-center w-full py-4 px-16 bg-white bg-opacity-5 border border-white text-[32px] font-bold hover:underline focus:underline`}
                 to="contacts"
                 spy={true}
                 smooth={true}

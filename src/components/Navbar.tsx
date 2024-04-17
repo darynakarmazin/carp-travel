@@ -11,7 +11,7 @@ function Navbar() {
       {menu.map(({ id, src, text }, index) => (
         <li key={id}>
           <Link
-            className="text-[14px] tracking-[1.4px] leading-tight no-underline hover:cursor-pointer link"
+            className="text-[14px] leading-tight no-underline hover:cursor-pointer link py-[4spx] hover:underline focus:underline"
             to={src}
             spy={true}
             smooth={true}
