@@ -1,5 +1,6 @@
 import About from "@/components/About/About";
 import Career from "@/components/Career/Career";
+import Contacts from "@/components/Contacts/Contacts";
 import Gallery from "@/components/Gallery/Gallery";
 import Header from "@/components/Header/Header";
 import Hero from "@/components/Hero/Hero";
@@ -15,6 +16,7 @@ export default function Home() {
         <Services />
         <Career />
         <Gallery />
+        <Contacts />
       </main>
     </>
   );

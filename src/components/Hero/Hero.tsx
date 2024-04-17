@@ -1,33 +1,41 @@
+"use client";
+
+import { Link } from "react-scroll";
 import Container from "../Container";
+import heroData from "../../data/hero.json";
+const { title, cities, slogan, description, buttonText } = heroData;
 
 function Hero() {
   return (
-    <section id="hero" className="hero-section pt-[106px] pb-20">
+    <section id="hero" className={`hero-section pt-[130px] pb-[104px]`}>
       <Container>
-        <div>
-          <h1>Uncover Carpathian’s Secrets</h1>
-          <ul>
-            <li>
-              <p>Hoverla</p>
-            </li>
-            <li>
-              <p>Yaremche</p>
-            </li>
-            <li>
-              <p>Zakarpattia</p>
-            </li>
-            <li>
-              <p>Vorokhta</p>
-            </li>
-            <li>
-              <p>Synevyr Lake</p>
-            </li>
-            <li>
-              <p>Bukovel</p>
-            </li>
-          </ul>
+        <div className={`flex`}>
+          <div>
+            <h1>{title}</h1>
+            <ul>
+              {cities &&
+                cities.map((city) => (
+                  <li key={city}>
+                    <p>{city}</p>
+                  </li>
+                ))}
+            </ul>
+          </div>
+          <div>
+            <p>{slogan}</p>
+            <p>{description}</p>
+            <Link
+              className="w-full"
+              to="contacts"
+              spy={true}
+              smooth={true}
+              duration={1500}
+              href="/"
+            >
+              {buttonText}
+            </Link>
+          </div>
         </div>
-        <div></div>
       </Container>
     </section>
   );
