@@ -21,7 +21,7 @@ function Header() {
 
   return (
     <>
-      <header className="header-section absolute w-full top-0 left-0 pt-6 pb-[88px]">
+      <header className="header-section absolute w-full top-0 left-0  pt-9 pb-[218px] xl:pt-6 xl:pb-[88px]">
         <Container>
           <nav className="flex justify-between items-center">
             <Link href="/" aria-label="logo-carp-travel">
