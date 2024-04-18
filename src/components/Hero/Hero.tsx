@@ -23,7 +23,7 @@ function Hero() {
           </div>
           <div className={`flex flex-col items-end`}>
             <div
-              className={`w-full mb-[181px] text-[98px] leading-tight font-medium`}
+              className={`w-[320px] mb-[181px] text-[98px] leading-tight font-medium`}
             >
               <p>
                 {slogan[0]}&nbsp;
