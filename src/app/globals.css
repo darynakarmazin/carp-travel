@@ -206,12 +206,3 @@ img {
     }
   }
 }
-
-.services-section {
-  background: linear-gradient(
-    to bottom,
-    rgb(0, 24, 38, 0.5) 0%,
-    rgba(0, 37, 49, 0) 50%,
-    transparent 50%
-  );
-}
