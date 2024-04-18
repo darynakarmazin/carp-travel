@@ -79,19 +79,48 @@ img {
 
 .join-btn {
   position: relative;
-  height: 71px;
+  height: 53px;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    height: 50px;
+    width: 230px;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 71px;
+    width: 293px;
+  }
 }
 .join-btn::after {
   position: absolute;
   left: 0;
   top: 0;
-  content: url(/icon/deck-left-frame.svg);
+  content: url(/icon/mob-left-frame.svg);
+}
+@media screen and (min-width: 768px) {
+  .join-btn::after {
+    content: url(/icon/tab-left-frame.svg);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .join-btn::after {
+    content: url(/icon/deck-left-frame.svg);
+  }
 }
 .join-btn::before {
   position: absolute;
   right: 0;
   top: 0;
-  content: url(/icon/deck-right-frame.svg);
+  content: url(/icon/mob-right-frame.svg);
+}
+@media screen and (min-width: 768px) {
+  .join-btn::before {
+    content: url(/icon/tab-right-frame.svg);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .join-btn::before {
+    content: url(/icon/deck-right-frame.svg);
+  }
 }
 
 .header-section {
