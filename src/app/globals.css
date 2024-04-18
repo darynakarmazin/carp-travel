@@ -77,6 +77,23 @@ img {
   margin: -1px;
 }
 
+.join-btn {
+  position: relative;
+  height: 71px;
+}
+.join-btn::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: url(/icon/deck-left-frame.svg);
+}
+.join-btn::before {
+  position: absolute;
+  right: 0;
+  top: 0;
+  content: url(/icon/deck-right-frame.svg);
+}
+
 .header-section {
   background: linear-gradient(
     180deg,

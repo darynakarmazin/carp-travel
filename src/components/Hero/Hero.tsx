@@ -1,8 +1,6 @@
-"use client";
-
-import { Link } from "react-scroll";
 import Container from "../Container";
 import heroData from "../../data/hero.json";
+import JoinButton from "../JoinButton";
 const { title, cities, slogan, description, buttonText } = heroData;
 
 function Hero() {
@@ -18,12 +16,12 @@ function Hero() {
               {title[2]}
             </h1>
             <p
-              className={`text-base font-extralight leading-normal tracking-wider mb-6`}
+              className={`text-base font-extralight leading-normal tracking-wider pl-6 mb-6`}
             >
               {cities}
             </p>
           </div>
-          <div className={`w-1/4 flex flex-col items-end`}>
+          <div className={`flex flex-col items-end`}>
             <div
               className={`w-full mb-[181px] text-[98px] leading-tight font-medium`}
             >
@@ -35,20 +33,11 @@ function Hero() {
                 {slogan[2]}
               </p>
             </div>
-            <div className={`max-w-[294px]`}>
+            <div className={`w-[294px]`}>
               <p className={`text-[18px] leading-6 font-extralight mb-[28px]`}>
                 {description}
               </p>
-              <Link
-                className={`${"join-btn"} flex justify-center w-full py-4 px-16 bg-white bg-opacity-5 border border-white text-[32px] font-bold hover:underline focus:underline`}
-                to="contacts"
-                spy={true}
-                smooth={true}
-                duration={1500}
-                href="/"
-              >
-                {buttonText}
-              </Link>
+              <JoinButton buttonText={buttonText} />
             </div>
           </div>
         </div>
