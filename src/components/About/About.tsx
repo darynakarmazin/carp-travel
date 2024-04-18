@@ -29,12 +29,12 @@ function About() {
           </div>
         </div>
         <div className="md:flex md:gap-[20px] xl:flex-row-reverse">
-          <div className="w-[189px] md:w-[221px] xl:w-[296px] ml-auto mt-[-104px] xl:mt-0 text-sm md:text-base xl:text-lg mb-10">
+          <div className="w-[189px] md:w-[221px] xl:w-[296px] ml-auto md:mt-[-104px] xl:mt-0 text-sm md:text-[16px] md:leading-tight xl:text-lg mb-10">
             <p className="uppercase text-left">{slogan[0]}</p>
             <p className="uppercase text-right">{slogan[1]}</p>
             <p>{slogan[2]}</p>
           </div>
-          <p className="text-sm md:text-base xl:text-lg font-extralight md:w-[463px] xl:w-[605px]">
+          <p className="text-sm md:text-[16px] md:leading-tight xl:text-lg font-extralight md:w-[463px] xl:w-[605px]">
             <span className="font-normal">{descriptionBottom[0]}</span>
             {descriptionBottom[1]}
           </p>
