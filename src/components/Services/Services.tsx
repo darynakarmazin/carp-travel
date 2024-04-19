@@ -16,7 +16,6 @@ const swiper = new Swiper(".swiper-container", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  // Додайте інші параметри за потреби
 });
 
 function Services() {
@@ -27,17 +26,6 @@ function Services() {
           <span className="font-thin">{title[0]}</span>
           {title[1]}
         </h2>
-        <div className="swiper-container">
-          <div className="swiper-wrapper">
-            {slides.map((slide, index) => (
-              <div key={index} className="swiper-slide">
-                {/* Вміст слайда тут */}
-                <h3>{slide.phrase}</h3>
-                {/* <p>{slide.description}</p> */}
-              </div>
-            ))}
-          </div>
-        </div>
       </Container>
     </section>
   );
