@@ -1,47 +1,47 @@
 {
-  "title": ["WE", " OFFER"],
-  "slides": [
-    {
-      "title": "ATVs Traveling",
-      "slogan": "Feel the adrenaline rush",
-      "description": "Join exciting rafting expeditions on the waterways of the Carpathians. Go through challenging waterways and overcome gusty waves, feel the adrenaline, and enjoy the incredible views of the surrounding mountains.",
-      "image": "/public/services-slider/slide-img-1.jpg",
-      "background": ""
-    },
-    {
-      "title": "Rock climbing",
-      "slogan": "Destroy your limitations",
-      "description": "Overcome the peaks of the Carpathians in a unique way - climbing. Make your own way to the heights and find inner peace in the embrace of the mighty rocks.",
-      "image": "/public/services-slider/slide-img-2.jpg",
-      "background": ""
-    },
-    {
-      "title": "Hot air ballooning",
-      "slogan": "Get Inspired",
-      "description": "Feel Zen over the mountain peaks! Hot air ballooning gives you incredible impressions and panoramas of the Carpathians that seem endless.",
-      "image": "/public/services-slider/slide-img-3.jpg",
-      "background": ""
-    },
-    {
-      "title": "Skydiving",
-      "slogan": "Overcome your fears",
-      "description": "Fly in the sky over the Carpathians! Experienced instructors will help you realize your dream of free flight. Remember the incredible emotions and panoramas from a bird's eye view forever.",
-      "image": "/public/services-slider/slide-img-4.jpg",
-      "background": ""
-    },
-    {
-      "title": "Rafting",
-      "slogan": "Trust the flow",
-      "description": "Join exciting rafting expeditions on the waterways of the Carpathians. Go through challenging waterways and overcome gusty waves, feel the adrenaline, and enjoy the incredible views of the surrounding mountains.",
-      "image": "/public/services-slider/slide-img-5.jpg",
-      "background": ""
-    }
-  ],
-  "links": [
+  "heading": ["WE", " OFFER"],
+  "menu": [
     "ATVs Traveling",
     "Rock climbing",
     "Hot air ballooning",
     "Skydiving",
     "Rafting"
+  ],
+  "slides": [
+    {
+      "title": "ATVs Traveling",
+      "slogan": "Feel the adrenaline rush",
+      "description": "Join exciting rafting expeditions on the waterways of the Carpathians. Go through challenging waterways and overcome gusty waves, feel the adrenaline, and enjoy the incredible views of the surrounding mountains.",
+      "image": "/services-slider/slide-img-1.jpg",
+      "background": "/services-slider/slide-bg-1.png"
+    },
+    {
+      "title": "Rock climbing",
+      "slogan": "Destroy your limitations",
+      "description": "Overcome the peaks of the Carpathians in a unique way - climbing. Make your own way to the heights and find inner peace in the embrace of the mighty rocks.",
+      "image": "/services-slider/slide-img-2.jpg",
+      "background": "/services-slider/slide-bg-2.png"
+    },
+    {
+      "title": "Hot air ballooning",
+      "slogan": "Get Inspired",
+      "description": "Feel Zen over the mountain peaks! Hot air ballooning gives you incredible impressions and panoramas of the Carpathians that seem endless.",
+      "image": "/services-slider/slide-img-3.jpg",
+      "background": "/services-slider/slide-bg-3.png"
+    },
+    {
+      "title": "Skydiving",
+      "slogan": "Overcome your fears",
+      "description": "Fly in the sky over the Carpathians! Experienced instructors will help you realize your dream of free flight. Remember the incredible emotions and panoramas from a bird's eye view forever.",
+      "image": "/services-slider/slide-img-4.jpg",
+      "background": "/services-slider/slide-bg-4.png"
+    },
+    {
+      "title": "Rafting",
+      "slogan": "Trust the flow",
+      "description": "Join exciting rafting expeditions on the waterways of the Carpathians. Go through challenging waterways and overcome gusty waves, feel the adrenaline, and enjoy the incredible views of the surrounding mountains.",
+      "image": "/services-slider/slide-img-5.jpg",
+      "background": "/services-slider/slide-bg-5.png"
+    }
   ]
 }
