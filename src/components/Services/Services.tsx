@@ -55,86 +55,80 @@ function Services() {
                   }}
                 >
                   <Container>
-                    <div className="">
-                      <div className="lg:p-6">
-                        <div className="mb-4 md:flex md:mb-9 lg:mb-5">
-                          <h2 className="text-[40px] md:text-[67px] xl:text-[98px] leading-snug md:leading-tight font-medium tracking-[-0.064em] mb-2">
-                            <span className="font-thin">{heading[0]}</span>
-                            {heading[1]}
-                          </h2>
-                          <p className="h-min text-43 font-thin text-right leading-[1.2] md:text-justify md:text-67 md:leading-[1.16] lg:text-98 lg:leading-normal">
-                            {`0${activeSlide + 1}/`}
-                            <span className="inline-block text-count-slide-dark text-left">
-                              {servicesData
-                                ? `${slides.length > 9 ? "" : 0}${
-                                    slides.length
-                                  }`
-                                : "XX"}
-                            </span>
-                          </p>
-                        </div>
+                    <div className="mb-4 md:flex md:mb-9 xl:mb-5">
+                      <h2 className="text-[40px] md:text-[67px] xl:text-[98px] leading-snug md:leading-tight font-medium tracking-[-0.064em] mb-2 md:mr-[170px]">
+                        <span className="font-thin">{heading[0]}</span>
+                        {heading[1]}
+                      </h2>
+                      <p className="h-min text-[43px] font-thin text-right leading-[1.2] md:text-justify md:text-[67px] md:leading-[1.16] xl:text-[98px] xl:leading-normal">
+                        {`0${activeSlide + 1}/`}
+                        <span className="inline-block opacity-20 text-left">
+                          {servicesData
+                            ? `${slides.length > 9 ? "" : 0}${slides.length}`
+                            : "XX"}
+                        </span>
+                      </p>
+                    </div>
 
-                        <div className="md:flex md:gap-5 md:items-center lg:items-stretch">
-                          <div className="mb-[12px] sm:w-[440px] sm:h-[311px] md:w-[463px] md:h-[370px] md:mb-0 lg:w-[607px] lg:h-[429px] lg:m-0">
-                            <Image
-                              src={image}
-                              alt={title}
-                              width={607}
-                              height={429}
-                              className="block w-full min-h-[213px] h-full object-cover"
-                            />
-                          </div>
+                    <div className="md:flex md:gap-5 md:items-center xl:items-stretch">
+                      <div className="mb-[12px] sm:w-[440px] sm:h-[311px] md:w-[463px] md:h-[370px] md:mb-0 xl:w-[607px] xxl:h-[429px] xl:m-0">
+                        <Image
+                          src={image}
+                          alt={title}
+                          width={607}
+                          height={429}
+                          className="block w-full min-h-[213px] h-full object-cover"
+                        />
+                      </div>
 
-                          <div className="md:w-[221px] lg:w-[605px]">
-                            <strong className="flex justify-end text-right text-12 font-extralight leading-2 tracking-[2.4px] mb-6 md:hidden">
+                      <div className="md:w-[221px] xl:w-[605px]">
+                        <strong className="flex justify-end text-right text-[12px] font-extralight leading-2 tracking-[2.4px] mb-6 md:hidden">
+                          {slogan}
+                        </strong>
+
+                        <div className="flex flex-col justify-between h-[320px] md:h-[376px] md:justify-start xl:h-[429px] xl:flex-row xl:justify-normal">
+                          <ul className="flex flex-col gap-4 md:mb-[25px] xl:w-[252px] xl:gap-6">
+                            {menu &&
+                              menu.map((link, linkIdx) => (
+                                <li
+                                  key={linkIdx}
+                                  className="xl:relative leading-0.85 md:leading-[0.82] xl:leading-[0.86]"
+                                >
+                                  <button
+                                    className={
+                                      activeSlide === linkIdx
+                                        ? "active_btn"
+                                        : "btn"
+                                    }
+                                    type="button"
+                                    tabIndex={isActive ? 0 : -1}
+                                    onClick={() => {
+                                      handleLinkClick(linkIdx);
+                                    }}
+                                  >
+                                    {link.length > 15 ? (
+                                      <span className="inline-block w-min text-left max-w-[185px] md:max-w-none">
+                                        {link}
+                                      </span>
+                                    ) : (
+                                      <span>{link}</span>
+                                    )}
+                                  </button>
+
+                                  <strong className="hidden text-[12px] font-extralight leading-2 tracking-[2.4px] xl:block xl:absolute xl:top-0 xl:left-[312px] xl:whitespace-nowrap">
+                                    {activeSlide === linkIdx ? slogan : ""}
+                                  </strong>
+                                </li>
+                              ))}
+                          </ul>
+
+                          <div className="md:flex md:flex-col md:justify-between md:h-full xl:w-[293px] xl:ml-[60px] xl:justify-end">
+                            <strong className="hidden md:block md:text-[12px] md:font-extralight md:leading-2 md:tracking-[2.4px] xl:hidden">
                               {slogan}
                             </strong>
-
-                            <div className="flex flex-col justify-between h-[320px] md:h-[376px] md:justify-start lg:h-[429px] lg:flex-row lg:justify-normal">
-                              <ul className="flex flex-col gap-4 md:mb-[25px] lg:w-[252px] lg:gap-6">
-                                {menu &&
-                                  menu.map((link, linkIdx) => (
-                                    <li
-                                      key={linkIdx}
-                                      className="lg:relative leading-0.85 md:leading-[0.82] lg:leading-[0.86]"
-                                    >
-                                      <button
-                                        className={
-                                          activeSlide === linkIdx
-                                            ? "active_btn"
-                                            : "btn"
-                                        }
-                                        type="button"
-                                        tabIndex={isActive ? 0 : -1}
-                                        onClick={() => {
-                                          handleLinkClick(linkIdx);
-                                        }}
-                                      >
-                                        {link.length > 15 ? (
-                                          <span className="inline-block w-min text-left max-w-[185px] md:max-w-none">
-                                            {link}
-                                          </span>
-                                        ) : (
-                                          <span>{link}</span>
-                                        )}
-                                      </button>
-
-                                      <strong className="hidden text-12 font-extralight leading-2 tracking-[2.4px] lg:block lg:absolute lg:top-0 lg:left-[312px] lg:whitespace-nowrap">
-                                        {activeSlide === linkIdx ? slogan : ""}
-                                      </strong>
-                                    </li>
-                                  ))}
-                              </ul>
-
-                              <div className="md:flex md:flex-col md:justify-between md:h-full lg:w-[293px] lg:ml-[60px] lg:justify-end">
-                                <strong className="hidden md:block md:text-12 md:font-extralight md:leading-2 md:tracking-[2.4px] lg:hidden">
-                                  {slogan}
-                                </strong>
-                                <p className="text-14 font-extralight leading-1.43 md:text-justify md:text-13 md:leading-[1.54] lg:text-18 lg:leading-[1.33]">
-                                  {description}
-                                </p>
-                              </div>
-                            </div>
+                            <p className="text-[14px] font-extralight leading-1.43 md:text-justify md:text-[13px] md:leading-[1.54] xl:text-[18px] xl:leading-[1.33]">
+                              {description}
+                            </p>
                           </div>
                         </div>
                       </div>
