@@ -1,22 +1,8 @@
 "use client";
 
-import Swiper from "swiper";
-import "swiper/swiper-bundle.css";
-
 import Container from "../Container";
 import servicesData from "../../data/services.json";
-const { title, slides } = servicesData;
-
-const swiper = new Swiper(".swiper-container", {
-  effect: "fade", // Ефект зникнення
-  fadeEffect: {
-    crossFade: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+const { title } = servicesData;
 
 function Services() {
   return (
