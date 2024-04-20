@@ -25,7 +25,6 @@ function Services() {
   };
 
   return (
-    // <section id="services" className="services-section py-20">
     <Swiper
       modules={[EffectFade, A11y]}
       slidesPerView={1}
@@ -140,7 +139,6 @@ function Services() {
           );
         })}
     </Swiper>
-    // </section>
   );
 }
 
