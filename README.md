@@ -1,8 +1,8 @@
+# Ape NFT Landing page.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
-
-First, run the development server:
+## Available Scripts
 
 ```bash
 npm run dev
@@ -14,23 +14,18 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Product Requirements Document
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+https://docs.google.com/document/d/1151CuhKx_g0fAW0HM67-bqe7ci8XYj3k/edit?usp=sharing&ouid=117880436410937102712&rtpof=true&sd=true
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Figma markup Document
+
+https://www.figma.com/file/2nHaXyrwQxqXLYmPUGQuP1/CarpTravel---%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%B5-%D0%B7%D0%B0%D0%B2%D0%B4%D0%B0%D0%BD%D0%BD%D1%8F?type=design&node-id=348-14&mode=design&t=B9qCuPIHJd7lZpso-0
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+The layout is adaptive and cross-browser - mobile from 360px to 480px
+(responsive layout), tablet - 768px, desktop - 1280px. Used the Mobile first
+approach. For formation, used Prettier. Used custom fonts. Deployed on vercel.com.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![Og-image](https://github.com/darynakarmazin/carp-travel/raw/main/src/app/og-image/og-image.png)
