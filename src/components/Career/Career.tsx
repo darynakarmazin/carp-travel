@@ -19,7 +19,6 @@ function Career() {
               {description}
             </p>
           </div>
-
           <h3 className="xl:hidden max-md:ml-[100px] text-3xl font-extralight mb-9 md:mb-14 uppercase md:ml-[80px]">
             {whyList[0].title}
           </h3>
