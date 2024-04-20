@@ -24,5 +24,8 @@
       ]
     }
   ],
-  "phrase": "Don't miss your opportunity! Fill out the form right now and join our team!"
+  "phrase": [
+    "Don't miss your opportunity!",
+    " Fill out the form right now and join our team!"
+  ]
 }
