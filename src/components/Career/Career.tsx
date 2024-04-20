@@ -53,7 +53,7 @@ function Career() {
                 {phrase[0]}
               </p>
               <p
-                className={`md:text-justify md:max-w-[178px] xl:max-w-[234px] text-sm leading-5 max-md:mb-6 md:text-[13px] xl:text-[18px] xl:leading-6 font-extralight`}
+                className={`md:text-justify md:max-w-[178px] xl:max-w-[234px] text-sm leading-5 max-md:mb-6 md:text-[13px] xl:text-[18px] xl:leading-6 font-extralight md:mb-8 xl:mb-3.5`}
               >
                 {phrase[1]}
               </p>
@@ -68,7 +68,7 @@ function Career() {
             <p className={`ml-[101px] text-sm leading-5 font-extralight`}>
               {phrase[0]}
             </p>
-            <p className={`ml-[101px] text-sm leading-5 font-extralight`}>
+            <p className={`ml-[101px] text-sm leading-5 font-extralight mb-6`}>
               {phrase[1]}
             </p>
             <CareerForm />
