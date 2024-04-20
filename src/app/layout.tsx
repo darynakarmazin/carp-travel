@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "CarpTravel",
   description:
     "We offer you unforgettable trips to the most beautiful parts of the Carpathians. Enjoy stunning views, exciting expeditions, and the best service!",
+  keywords: "Carpathians, Ukraine, tralel, trip",
   icons: {
     icon: [
       {
@@ -17,6 +18,19 @@ export const metadata: Metadata = {
       {
         url: "/dark-icon.png",
         media: "(prefers-color-scheme: dark)",
+      },
+    ],
+  },
+  openGraph: {
+    type: "website",
+    url: "https://carp-travel-eight.vercel.app/",
+    title: "CarpTravel",
+    description:
+      "We offer you unforgettable trips to the most beautiful parts of the Carpathians. Enjoy stunning views, exciting expeditions, and the best service!",
+    siteName: "CarpTravel",
+    images: [
+      {
+        url: "/og-image.png",
       },
     ],
   },
