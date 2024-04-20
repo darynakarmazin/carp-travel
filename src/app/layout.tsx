@@ -24,8 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://carp-travel-eight.vercel.app/",
-    title:
-      "CarpTravel - unforgettable trips to the most beautiful parts of the Carpathians",
+    title: "CarpTravel - trips to the most beautiful parts of the Carpathians",
     description:
       "We offer you unforgettable trips to the most beautiful parts of the Carpathians. Enjoy stunning views, exciting expeditions, and the best service!",
     siteName: "CarpTravel",
