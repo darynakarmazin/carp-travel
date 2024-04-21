@@ -36,9 +36,10 @@ function CareerForm() {
       onSubmit={handleSubmit(onSubmit)}
     >
       <div className="flex flex-col gap-4 md:w-1/2">
-        <label className="flex flex-col gap-1">
+        <label className="relative flex flex-col gap-1 text-[12px] leading-6">
           Full name
           <input
+            className="text-[13px] xl:text-[20px] leading-6 font-extralight px-2 outline-none bg-white bg-opacity-5 text-white placeholder:opacity-50"
             {...register("fullName", {
               required: "Full name is required",
               minLength: {
@@ -52,11 +53,16 @@ function CareerForm() {
             })}
             placeholder="John Smith"
           />
-          {errors.fullName && <p>{errors.fullName?.message}</p>}
+          {errors.fullName && (
+            <p className="absolute bottom-[-24px] right-0 text-[12px] leading-6 tracking-[0.15em] text-red-500 font-extralight">
+              {`x ${errors.fullName?.message}`}
+            </p>
+          )}
         </label>
-        <label className="flex flex-col gap-1">
+        <label className="relative flex flex-col gap-1 text-[12px] leading-6">
           E-mail
           <input
+            className="text-[13px] xl:text-[20px] leading-6 font-extralight px-2 outline-none bg-white bg-opacity-5 text-white placeholder:opacity-50"
             {...register("email", {
               required: "Email is required",
               pattern: {
@@ -66,67 +72,86 @@ function CareerForm() {
             })}
             placeholder="johnsmith@email.com"
           />
-          {errors.email && <p>{errors.email?.message}</p>}
+          {errors.email && (
+            <p className="absolute bottom-[-24px] right-0 text-[12px] leading-6 tracking-[0.15em] text-red-500 font-extralight">
+              {`x ${errors.email?.message}`}
+            </p>
+          )}
         </label>
-        <label className="flex flex-col gap-1">
+        <label className="relative flex flex-col gap-1 text-[12px] leading-6">
           Position
           <input
+            className="text-[13px] xl:text-[20px] leading-6 font-extralight px-2 outline-none bg-white bg-opacity-5 text-white placeholder:opacity-50"
             {...register("position", {
               required: "Position is required",
             })}
             placeholder="Movie maker"
           />
-          {errors.position && <p>{errors.position?.message}</p>}
+          {errors.position && (
+            <p className="absolute bottom-[-24px] right-0 text-[12px] leading-6 tracking-[0.15em] text-red-500 font-extralight">
+              {`x ${errors.position?.message}`}
+            </p>
+          )}
         </label>
-        <label className="flex flex-col gap-1">
+        <label className="relative flex flex-col gap-1 text-[12px] leading-6">
           Phone
           <input
+            className="text-[13px] xl:text-[20px] leading-6 font-extralight px-2 outline-none bg-white bg-opacity-5 text-white placeholder:opacity-50"
             {...register("phone", {
               required: "Phone is required",
             })}
             placeholder="+ 38 (097) 12 34 567"
           />
-          {errors.phone && <p>{errors.phone?.message}</p>}
+          {errors.phone && (
+            <p className="absolute bottom-[-24px] right-0 text-[12px] leading-6 tracking-[0.15em] text-red-500 font-extralight">
+              {`x ${errors.phone?.message}`}
+            </p>
+          )}
         </label>
-        <label className="max-md:hidden">
+        <label className="max-md:hidden relative text-[12px] leading-6">
           <input
-            className="mr-2"
+            className="mr-2 text-[12px] leading-[22px]"
             {...register("agreement", { required: true })}
             type="checkbox"
           />
           I confirm my consent to the processing of personal data.
+          {errors.agreement && (
+            <p className="max-md:hidden absolute bottom-[-24px] right-0 text-[12px] leading-6 tracking-[0.1em] text-red-500 font-extralight">
+              You must agree to the terms
+            </p>
+          )}
         </label>
-        {errors.agreement && (
-          <p className="max-md:hidden">
-            You must agree to the terms and conditions
-          </p>
-        )}
       </div>
-      <div className="flex flex-col gap-4 md:w-1/2">
-        <label className="flex flex-col gap-1">
+      <div className="flex flex-col gap-4 md:w-1/2 text-[12px] leading-6">
+        <label className="relative flex flex-col gap-1">
           Message
           <textarea
-            className="h-48 md:h-[228px] xl:h-[268px]"
+            className="h-48 md:h-[228px] xl:h-[268px] text-[13px] xl:text-[20px] leading-6 font-extralight px-2 outline-none bg-white bg-opacity-5 text-white"
             {...register("message", {
               required: "Message is required",
             })}
           />
-          {errors.message && <p>{errors.message?.message}</p>}
+          {errors.message && (
+            <p className="absolute bottom-[-24px] right-0 text-[12px] leading-6 tracking-[0.15em] text-red-500 font-extralight">
+              {`x ${errors.message?.message}`}
+            </p>
+          )}
         </label>
-        <label className="md:hidden">
+        <label className="relative md:hidden text-[12px] leading-6">
           <input
-            className="mr-2"
+            className="mr-2 text-[12px] leading-[22px] xl:leading-6"
             {...register("agreement", { required: true })}
             type="checkbox"
           />
           I confirm my consent to the processing of personal data.
+          {errors.agreement && (
+            <p className="md:hidden absolute bottom-[-24px] right-0 text-right text-[12px] leading-6 tracking-[0.1em] text-red-500 font-extralight">
+              You must agree to the terms
+            </p>
+          )}
         </label>
-        {errors.agreement && (
-          <p className="md:hidden">
-            You must agree to the terms and conditions
-          </p>
-        )}
-        <input className="ml-auto" type="submit" value="SEND" />
+
+        <input className="ml-auto text-3xl" type="submit" value="SEND" />
       </div>
     </form>
   );
