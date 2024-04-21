@@ -108,13 +108,14 @@ function CareerForm() {
             </p>
           )}
         </label>
+
         <label className="max-md:hidden relative text-[12px] leading-6">
           <input
             className="custom-checkbox mr-2 text-[12px] leading-[22px]"
             {...register("agreement", { required: true })}
             type="checkbox"
           />
-          I confirm my consent to the processing of personal data.
+          <p>I confirm my consent to the processing of personal data.</p>
           {errors.agreement && (
             <p className="max-md:hidden absolute bottom-[-24px] right-0 text-[12px] leading-6 tracking-[0.1em] text-red-500 font-extralight">
               You must agree to the terms
@@ -137,7 +138,7 @@ function CareerForm() {
             </p>
           )}
         </label>
-        <label className="custom-label relative md:hidden text-[12px] leading-[22px] xl:leading-6">
+        <label className="relative md:hidden text-[12px] leading-[22px] xl:leading-6">
           <input
             className="custom-checkbox mr-2"
             {...register("agreement", { required: true })}
