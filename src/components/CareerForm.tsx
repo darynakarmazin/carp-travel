@@ -110,7 +110,7 @@ function CareerForm() {
         </label>
         <label className="max-md:hidden relative text-[12px] leading-6">
           <input
-            className="mr-2 text-[12px] leading-[22px]"
+            className="custom-checkbox mr-2 text-[12px] leading-[22px]"
             {...register("agreement", { required: true })}
             type="checkbox"
           />
@@ -137,9 +137,9 @@ function CareerForm() {
             </p>
           )}
         </label>
-        <label className="relative md:hidden text-[12px] leading-6">
+        <label className="custom-label relative md:hidden text-[12px] leading-[22px] xl:leading-6">
           <input
-            className="mr-2 text-[12px] leading-[22px] xl:leading-6"
+            className="custom-checkbox mr-2"
             {...register("agreement", { required: true })}
             type="checkbox"
           />
