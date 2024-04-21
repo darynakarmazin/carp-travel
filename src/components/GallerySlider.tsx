@@ -1,28 +1,28 @@
 "use client";
 
+import React, { useRef } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperType } from "swiper";
 import { EffectCoverflow, Navigation } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/effect-fade";
+import "swiper/css/effect-coverflow";
 
 import galleryData from "../data/gallery.json";
-import { useRef } from "react";
 const { slides } = galleryData;
 
-function GallerySlider() {
+export default function GallerySlider() {
+  const swiperRef = useRef<SwiperType>();
   return (
     <div className="max-md:hidden relative">
       <Swiper
-        navigation={{
-          nextEl: ".custom_next",
-          prevEl: ".custom_prev",
-        }}
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
         loop={true}
+        onBeforeInit={(swiper) => {
+          swiperRef.current = swiper;
+        }}
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
@@ -45,6 +45,7 @@ function GallerySlider() {
               scale: 0.35,
             },
           },
+
           1280: {
             coverflowEffect: {
               rotate: 0,
@@ -57,30 +58,41 @@ function GallerySlider() {
         }}
       >
         {slides.map((slide, index) => (
-          <SwiperSlide key={index}>
-            <Image
-              src={slide.image}
-              alt="View of nature"
-              width={415}
-              height={294}
-            />
+          <SwiperSlide tag="li" key={index}>
+            {({ isActive }) => (
+              <div
+                className={`wrapper relative right-[80px] w-[415px] xl:w-[606px] h-[294px] xl:h-[429px] ${
+                  isActive ? "before:hidden right-[90px] xl:right-[95px]" : ""
+                }`}
+              >
+                <Image
+                  src={slide.image}
+                  alt="View of nature"
+                  width={606}
+                  height={429}
+                  className="w-full"
+                />
+              </div>
+            )}
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="flex justify-around">
+      <div className="absolute z-10 flex justify-between flex-row bottom-4 left-[45px] right-[25px] xl:left-[211px] xl:right-[184px]">
         <button
+          className="font-thin text-[33px] leading-none uppercase hover:opacity-[0.5] focus:opacity-[0.5] duration-300"
+          onClick={() => swiperRef.current?.slidePrev()}
           type="button"
-          className="custom_prev"
-          aria-label="Previous slide"
         >
-          BACK
+          Back
         </button>
-        <button type="button" className="custom_next" aria-label="Next slide">
-          NEXT
+        <button
+          className="font-thin text-[33px] leading-none uppercase hover:opacity-[0.5] focus:opacity-[0.5] duration-300"
+          onClick={() => swiperRef.current?.slideNext()}
+          type="button"
+        >
+          Next
         </button>
       </div>
     </div>
   );
 }
-
-export default GallerySlider;
