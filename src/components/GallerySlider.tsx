@@ -2,61 +2,56 @@
 
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Swiper as SwiperType } from "swiper";
+import { EffectCoverflow, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
 
 import galleryData from "../data/gallery.json";
+import { useRef } from "react";
 const { slides } = galleryData;
 
 function GallerySlider() {
   return (
-    <div className="max-md:hidden">
+    <div className="max-md:hidden relative">
       <Swiper
         navigation={{
           nextEl: ".custom_next",
           prevEl: ".custom_prev",
         }}
-        modules={[Navigation]}
+        effect={"coverflow"}
+        grabCursor={true}
+        centeredSlides={true}
+        loop={true}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: false,
+        }}
+        modules={[EffectCoverflow, Navigation]}
+        wrapperTag="ul"
+        className="flex gap-6 h-[294px] xl:h-[429px]"
         slidesPerView={3}
-        loop
-        centeredSlides
+        spaceBetween={24}
         breakpoints={{
-          0: {
-            enabled: false,
-            slidesPerView: -1,
-          },
           768: {
-            enabled: true,
-            spaceBetween: 146,
-            width: 703,
-            height: 294,
-            creativeEffect: {
-              limitProgress: 1,
-              prev: {
-                scale: 0.29,
-                translate: ["-69.3%", 0, 0],
-              },
-              next: {
-                scale: 0.29,
-                translate: ["69.3%", 0, 0],
-              },
+            coverflowEffect: {
+              rotate: 0,
+              stretch: -44,
+              depth: 0,
+              modifier: 1,
+              scale: 0.35,
             },
           },
-          1440: {
-            spaceBetween: 650,
-            width: 1280,
-            height: 450,
-            creativeEffect: {
-              limitProgress: 1,
-              prev: {
-                scale: 0.52,
-                translate: ["-76%", 0, 0],
-              },
-              next: {
-                scale: 0.52,
-                translate: ["76%", 0, 0],
-              },
+          1280: {
+            coverflowEffect: {
+              rotate: 0,
+              stretch: -44,
+              depth: 0,
+              modifier: 1,
+              scale: 0.5,
             },
           },
         }}
@@ -66,13 +61,13 @@ function GallerySlider() {
             <Image
               src={slide.image}
               alt="View of nature"
-              width={121}
-              height={86}
+              width={415}
+              height={294}
             />
           </SwiperSlide>
         ))}
       </Swiper>
-      <div>
+      <div className="flex justify-around">
         <button
           type="button"
           className="custom_prev"
