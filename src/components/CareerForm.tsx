@@ -55,7 +55,7 @@ function CareerForm() {
           />
           {errors.fullName && (
             <p className="absolute bottom-[-24px] right-0 text-[12px] leading-6 tracking-[0.15em] text-red-500 font-extralight">
-              {`x ${errors.fullName?.message}`}
+              {`× ${errors.fullName?.message}`}
             </p>
           )}
         </label>
@@ -74,7 +74,7 @@ function CareerForm() {
           />
           {errors.email && (
             <p className="absolute bottom-[-24px] right-0 text-[12px] leading-6 tracking-[0.15em] text-red-500 font-extralight">
-              {`x ${errors.email?.message}`}
+              {`× ${errors.email?.message}`}
             </p>
           )}
         </label>
@@ -89,7 +89,7 @@ function CareerForm() {
           />
           {errors.position && (
             <p className="absolute bottom-[-24px] right-0 text-[12px] leading-6 tracking-[0.15em] text-red-500 font-extralight">
-              {`x ${errors.position?.message}`}
+              {`× ${errors.position?.message}`}
             </p>
           )}
         </label>
@@ -104,7 +104,7 @@ function CareerForm() {
           />
           {errors.phone && (
             <p className="absolute bottom-[-24px] right-0 text-[12px] leading-6 tracking-[0.15em] text-red-500 font-extralight">
-              {`x ${errors.phone?.message}`}
+              {`× ${errors.phone?.message}`}
             </p>
           )}
         </label>
@@ -134,7 +134,7 @@ function CareerForm() {
           />
           {errors.message && (
             <p className="absolute bottom-[-24px] right-0 text-[12px] leading-6 tracking-[0.15em] text-red-500 font-extralight">
-              {`x ${errors.message?.message}`}
+              {`× ${errors.message?.message}`}
             </p>
           )}
         </label>
