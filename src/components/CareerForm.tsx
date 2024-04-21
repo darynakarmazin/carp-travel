@@ -26,9 +26,8 @@ function CareerForm() {
       agreement: false,
     },
   });
-  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
-
-  console.log(watch());
+  const onSubmit: SubmitHandler<Inputs> = (data) =>
+    alert(`${data.fullName}, заявку успішно відтправлено!`);
 
   return (
     <form
