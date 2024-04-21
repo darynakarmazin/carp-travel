@@ -1,7 +1,8 @@
+import Image from "next/image";
 import Container from "../Container";
 import galleryData from "../../data/gallery.json";
 import GallerySlider from "../GallerySlider";
-const { title } = galleryData;
+const { title, slides } = galleryData;
 
 function Gallery() {
   return (
@@ -11,6 +12,20 @@ function Gallery() {
           <span className="font-thin">{title[0]}</span>
           {title[1]}
         </h2>
+        <ul className="md:hidden flex flex-col gap-6">
+          {slides.map((slide, index) => {
+            return (
+              <li key={index}>
+                <Image
+                  src={slide.image}
+                  width={438}
+                  height={310}
+                  alt="Picture of nature"
+                />
+              </li>
+            );
+          })}
+        </ul>
         <GallerySlider />
       </Container>
     </section>

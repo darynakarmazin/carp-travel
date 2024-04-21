@@ -1,5 +1,5 @@
 function GallerySlider() {
-  return <div>GallerySlider</div>;
+  return <div className="max-md:hidden">GallerySlider</div>;
 }
 
 export default GallerySlider;
