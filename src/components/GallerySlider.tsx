@@ -55,7 +55,7 @@ export default function GallerySlider() {
           },
         }}
       >
-        {slides.map((slide, index) => (
+        {[...slides, ...slides].map((slide, index) => (
           <SwiperSlide key={index}>
             {({ isActive }) => (
               <div
