@@ -143,7 +143,7 @@ function CareerForm() {
             {...register("agreement", { required: true })}
             type="checkbox"
           />
-          I confirm my consent to the processing of personal data.
+          <p>I confirm my consent to the processing of personal data.</p>
           {errors.agreement && (
             <p className="md:hidden absolute bottom-[-24px] right-0 text-right text-[12px] leading-6 tracking-[0.1em] text-red-500 font-extralight">
               You must agree to the terms
