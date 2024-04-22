@@ -126,7 +126,7 @@ function CareerForm() {
         <label className="relative flex flex-col gap-1">
           Message
           <textarea
-            className="h-48 md:h-[228px] xl:h-[268px] text-[13px] xl:text-[20px] leading-6 font-extralight px-2 outline-none bg-white bg-opacity-5 text-white"
+            className="h-48 md:h-[228px] xl:h-[268px] text-[13px] xl:text-[20px] leading-6 font-extralight px-2 outline-none bg-white bg-opacity-5 text-white resize-none"
             {...register("message", {
               required: "Message is required",
             })}
