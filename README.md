@@ -1,4 +1,4 @@
-# Ape NFT Landing page.
+![image](https://github.com/darynakarmazin/carp-travel/assets/110288504/ce38b208-4448-46d7-81b8-c12a4c8d1638)# Ape NFT Landing page.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
@@ -32,4 +32,38 @@ approach. For formation, used Prettier. Used custom fonts. Deployed on vercel.co
 
 # Lighthouse report
 
-![Lighthouse](https://github.com/darynakarmazin/carp-travel/raw/main/src/app/og-image/lighthouse-report.png)
+![Lighthouse](https://github.com/darynakarmazin/carp-travel/raw/main/src/app/og-image/lighthouse-report.png) 
+
+Teclology stack [Next.js (using app router), Tailwind CSS, Typescript, Git, react-hooks, react-scroll, Swiper, react-hook-form]
+
+#Header & Hero (Home)
+
+1. React-scroll is used for smooth navigation through sections.
+2. Not fixed. Contains logo and navigation menu.
+   ![Header](https://github.com/darynakarmazin/carp-travel/raw/main/src/app/og-image/header-hero.png)
+
+#About (Who we are)
+
+   ![About](https://github.com/darynakarmazin/carp-travel/raw/main/src/app/og-image/about.png)
+
+#Services (We offer)
+
+1. A slider with different background images has been implemented. Swiper is used.
+   ![MIND map](https://github.com/darynakarmazin/carp-travel/raw/main/src/app/og-image/services.png)
+
+#Career (Choose us)
+
+1. Provided form validation using react-hook-form and Tailwind CSS to style validation errors.
+   ![FAQ](https://github.com/darynakarmazin/carp-travel/raw/main/src/app/og-image/сareer.png)
+
+#Gallery (Our gallery)
+
+1. Developed image slider. Clicking or dragging causes one slide to be scrolled.
+   (Used swiper library).
+   ![Arts](https://github.com/darynakarmazin/carp-travel/raw/main/src/app/og-image/gallery.png)
+
+#Contacts (Contact us)
+
+1. Provided form validation using react-hook-form and Tailwind CSS to style validation errors.
+![Arts](https://github.com/darynakarmazin/carp-travel/raw/main/src/app/og-image/contacts.png)
+
