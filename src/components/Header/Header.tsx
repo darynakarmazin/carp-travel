@@ -15,10 +15,6 @@ function Header() {
     setIsMobileMenuOpen(true);
   };
 
-  const closeMobileMenu = () => {
-    setIsMobileMenuOpen(false);
-  };
-
   return (
     <>
       <header className="header-section absolute w-full top-0 left-0 py-9 xl:py-6">
@@ -44,7 +40,10 @@ function Header() {
           </nav>
         </Container>
       </header>
-      <MobileMenu isOpen={isMobileMenuOpen} onClose={closeMobileMenu} />
+      <MobileMenu
+        isOpen={isMobileMenuOpen}
+        setIsMobileMenuOpen={setIsMobileMenuOpen}
+      />
     </>
   );
 }
