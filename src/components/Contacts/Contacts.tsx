@@ -1,5 +1,7 @@
 import Container from "../Container";
 import contactsData from "../../data/contacts.json";
+import ContactsList from "../ContactsList";
+import ContactsForm from "../ContactsForm";
 const { title } = contactsData;
 
 function Contacts() {
@@ -10,6 +12,10 @@ function Contacts() {
           <span className="font-thin">{title[0]}</span>
           {title[1]}
         </h2>
+        <div>
+          <ContactsList />
+          <ContactsForm />
+        </div>
       </Container>
     </section>
   );
