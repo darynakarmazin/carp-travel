@@ -1,5 +1,5 @@
 function ContactsForm() {
-  return <form></form>;
+  return <form className="xl:w-1/2 xl:px-6">FORM</form>;
 }
 
 export default ContactsForm;
