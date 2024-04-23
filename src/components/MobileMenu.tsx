@@ -25,7 +25,7 @@ function MobileMenu({ isOpen, setIsMobileMenuOpen }: Props) {
       <Container>
         <div className="flex items-center justify-end">
           <button
-            className="py-[3.5px]"
+            className="py-[3.5px] z-10"
             type="button"
             onClick={handleModalClose}
           >
