@@ -49,21 +49,21 @@ Teclology stack [Next.js (using app router), Tailwind CSS, Typescript, Git, reac
 #Services (We offer)
 
 1. A slider with different background images has been implemented. Swiper is used.
-   ![MIND map](https://github.com/darynakarmazin/carp-travel/raw/main/src/app/og-image/services.png)
+   ![Services](https://github.com/darynakarmazin/carp-travel/raw/main/src/app/og-image/services.png)
 
 #Career (Choose us)
 
 1. Provided form validation using react-hook-form and Tailwind CSS to style validation errors.
-   ![FAQ](https://github.com/darynakarmazin/carp-travel/raw/main/src/app/og-image/сareer.png)
+   ![Career](https://github.com/darynakarmazin/carp-travel/raw/main/src/app/og-image/сareer.png)
 
 #Gallery (Our gallery)
 
 1. Developed image slider. Clicking or dragging causes one slide to be scrolled.
    (Used swiper library).
-   ![Arts](https://github.com/darynakarmazin/carp-travel/raw/main/src/app/og-image/gallery.png)
+   ![Gallery](https://github.com/darynakarmazin/carp-travel/raw/main/src/app/og-image/gallery.png)
 
 #Contacts (Contact us)
 
 1. Provided form validation using react-hook-form and Tailwind CSS to style validation errors.
-![Arts](https://github.com/darynakarmazin/carp-travel/raw/main/src/app/og-image/contacts.png)
+![Contacts](https://github.com/darynakarmazin/carp-travel/raw/main/src/app/og-image/contacts.png)
 
