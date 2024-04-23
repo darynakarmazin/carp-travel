@@ -313,6 +313,13 @@ img {
   background-size: cover;
   background-position: center;
 }
+.contacts-section {
+  background-image: var(--background-gradient-second),
+    url("/bg-img/contacts/mob-contacts-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 @media screen and (min-width: 768px) {
   .hero-section {
@@ -330,6 +337,10 @@ img {
   .gallery-section {
     background-image: var(--background-gradient-second),
       url("/bg-img/gallery/tab-gallery-bg.png");
+  }
+  .contacts-section {
+    background-image: var(--background-gradient-second),
+      url("/bg-img/contacts/tab-contacts-bg.png");
   }
 }
 
@@ -349,6 +360,10 @@ img {
   .gallery-section {
     background-image: var(--background-gradient-second),
       url("/bg-img/gallery/deck-gallery-bg.png");
+  }
+  .contacts-section {
+    background-image: var(--background-gradient-second),
+      url("/bg-img/contacts/deck-contacts-bg.png");
   }
 }
 
@@ -370,6 +385,10 @@ img {
     background-image: var(--background-gradient-second),
       url("/bg-img/gallery/mob-gallery-bg@x2.png");
   }
+  .contacts-section {
+    background-image: var(--background-gradient-second),
+      url("/bg-img/contacts/mob-contacts-bg@x2.png");
+  }
 
   @media screen and (min-width: 768px) {
     .hero-section {
@@ -387,6 +406,10 @@ img {
     .gallery-section {
       background-image: var(--background-gradient-second),
         url("/bg-img/gallery/tab-gallery-bg@x2.png");
+    }
+    .contacts-section {
+      background-image: var(--background-gradient-second),
+        url("/bg-img/contacts/tab-contacts-bg@x2.png");
     }
   }
 
@@ -406,6 +429,10 @@ img {
     .gallery-section {
       background-image: var(--background-gradient-second),
         url("/bg-img/gallery/deck-gallery-bg@x2.png");
+    }
+    .contacts-section {
+      background-image: var(--background-gradient-second),
+        url("/bg-img/contacts/deck-contacts-bg@x2.png");
     }
   }
 }
