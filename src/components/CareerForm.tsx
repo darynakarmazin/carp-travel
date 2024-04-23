@@ -15,7 +15,7 @@ function CareerForm() {
   const {
     register,
     handleSubmit,
-    watch,
+    reset,
     formState: { errors },
   } = useForm<Inputs>({
     defaultValues: {
@@ -26,8 +26,10 @@ function CareerForm() {
       agreement: false,
     },
   });
-  const onSubmit: SubmitHandler<Inputs> = (data) =>
+  const onSubmit: SubmitHandler<Inputs> = (data) => {
     alert(`${data.fullName}, заявку успішно відтправлено!`);
+    reset();
+  };
 
   return (
     <form
