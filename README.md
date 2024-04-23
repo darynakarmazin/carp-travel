@@ -32,4 +32,4 @@ approach. For formation, used Prettier. Used custom fonts. Deployed on vercel.co
 
 # Lighthouse report
 
-![Lighthouse](https://github.com/darynakarmazin/carp-travel/raw/main/src/app/og-image/lighthouse.png)
+![Lighthouse](https://github.com/darynakarmazin/carp-travel/raw/main/src/app/og-image/lighthouse-report.png)
