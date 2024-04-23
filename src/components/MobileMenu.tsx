@@ -36,7 +36,7 @@ function MobileMenu({ isOpen, setIsMobileMenuOpen }: Props) {
           {menu.map(({ id, src, text }, index) => (
             <li key={id}>
               <Link
-                className="text-[14px] leading-tight no-underline hover:cursor-pointer link py-[4spx] hover:underline focus:underline transition-all duration-500 ease-in-out"
+                className="text-[18px] leading-tight no-underline hover:cursor-pointer link py-[4px] hover:underline focus:underline transition-all duration-500 ease-in-out"
                 to={src}
                 spy={true}
                 smooth={true}
