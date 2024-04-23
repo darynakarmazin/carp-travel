@@ -1,4 +1,4 @@
-![image](https://github.com/darynakarmazin/carp-travel/assets/110288504/ce38b208-4448-46d7-81b8-c12a4c8d1638)# Ape NFT Landing page.
+# Ape NFT Landing page.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
