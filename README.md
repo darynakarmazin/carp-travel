@@ -29,3 +29,7 @@ The layout is adaptive and cross-browser - mobile from 360px to 480px
 approach. For formation, used Prettier. Used custom fonts. Deployed on vercel.com.
 
 ![Og-image](https://github.com/darynakarmazin/carp-travel/raw/main/src/app/og-image/og-image.png)
+
+# Lighthouse report
+
+![Lighthouse](https://github.com/darynakarmazin/carp-travel/raw/main/src/app/og-image/lighthouse.png)
