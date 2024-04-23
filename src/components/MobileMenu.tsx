@@ -3,6 +3,7 @@
 import { Link } from "react-scroll";
 import Container from "./Container";
 import menu from "../data/navbar.json";
+import { useEffect } from "react";
 
 const duration = 100;
 
@@ -12,6 +13,12 @@ interface Props {
 }
 
 function MobileMenu({ isOpen, setIsMobileMenuOpen }: Props) {
+  useEffect(() => {
+    isOpen
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "auto");
+  }, [isOpen]);
+
   const handleModalClose = () => {
     setIsMobileMenuOpen(false);
   };
