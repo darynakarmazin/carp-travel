@@ -19,7 +19,7 @@ function MobileMenu({ isOpen, setIsMobileMenuOpen }: Props) {
       : (document.body.style.overflow = "auto");
   }, [isOpen]);
 
-  const handleModalClose = function () {
+  const handleModalClose = () => {
     setIsMobileMenuOpen(false);
   };
 
