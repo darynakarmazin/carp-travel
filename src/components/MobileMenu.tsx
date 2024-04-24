@@ -22,6 +22,9 @@ function MobileMenu({ isOpen, setIsMobileMenuOpen }: Props) {
   const handleModalClose = () => {
     setIsMobileMenuOpen(false);
   };
+  const handleLinkClick = () => {
+    setIsMobileMenuOpen(false);
+  };
 
   return (
     <div
@@ -49,7 +52,7 @@ function MobileMenu({ isOpen, setIsMobileMenuOpen }: Props) {
                 smooth={true}
                 duration={duration * (index + 1)}
                 href="/"
-                onClick={handleModalClose}
+                onClick={handleLinkClick}
               >
                 {text}
               </Link>
