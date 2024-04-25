@@ -35,7 +35,7 @@ function Hero() {
               {cities}
             </p>
           </div>
-          <div className={`flex flex-col items-end`}>
+          <div className={`flex flex-col items-end overflow-hidden`}>
             <div
               className={`max-md:hidden md:w-[220px] xl:w-[320px] mb-14 xl:mb-[181px] text-[67px] xl:text-[98px] leading-none font-medium`}
             >
