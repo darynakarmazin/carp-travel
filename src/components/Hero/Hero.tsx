@@ -24,13 +24,13 @@ function Hero() {
           </div>
           <div className={`md:w-1/2`}>
             <h1
-              className={`max-md:w-[278px] text-[40px] md:text-[67px] xl:text-[98px] uppercase font-thin tracking-tighter leading-[56px] md:leading-[81px] xl:leading-[119px] xl:pt-6 xl:pl-6 mb-6 md:mb-[64px] xl:mb-[148px]`}
+              className={`max-md:w-[278px] text-[40px] md:text-[67px] xl:text-[98px] uppercase font-thin tracking-tighter leading-[56px] md:leading-[81px] xl:leading-[119px] mb-6 md:mb-[64px] xl:mb-[148px]`}
             >
               <span className={"font-medium"}>{title[0]}</span> {title[1]}{" "}
               {title[2]}
             </h1>
             <p
-              className={`max-md:w-[175px] md:w-[275px] xl:w-full xl:text-nowrap text-[10px] md:text-[14px] leading-relaxed md:leading-4 xl:text-base font-extralight xl:leading-normal tracking-wider xl:pl-6 mb-6`}
+              className={`max-md:w-[175px] md:w-[275px] xl:w-full xl:text-nowrap text-[10px] md:text-[14px] leading-relaxed md:leading-4 xl:text-base font-extralight xl:leading-normal tracking-wider mb-6`}
             >
               {cities}
             </p>
