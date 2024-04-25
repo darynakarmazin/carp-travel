@@ -8,7 +8,7 @@ function Contacts() {
   return (
     <section id="contacts" className="contacts-section py-20">
       <Container>
-        <h2 className="text-[40px] md:text-[67px] xl:text-[98px] leading-snug md:leading-tight font-medium tracking-[-0.064em] max-md:mb-6 md:mb-9">
+        <h2 className="uppercase text-[40px] md:text-[67px] xl:text-[98px] leading-snug md:leading-tight font-medium tracking-[-0.064em] max-md:mb-6 md:mb-9">
           <span className="font-thin">{title[0]}</span>
           {title[1]}
         </h2>

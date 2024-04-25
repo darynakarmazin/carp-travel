@@ -55,7 +55,7 @@ function Services() {
                 >
                   <Container>
                     <div className="mb-4 md:flex md:mb-9 xl:mb-5">
-                      <h2 className="text-[40px] md:text-[67px] xl:text-[98px] leading-snug md:leading-tight font-medium tracking-[-0.064em] mb-2 md:mr-[170px]">
+                      <h2 className="uppercase text-[40px] md:text-[67px] xl:text-[98px] leading-snug md:leading-tight font-medium tracking-[-0.064em] mb-2 md:mr-[170px]">
                         <span className="font-thin">{heading[0]}</span>
                         {heading[1]}
                       </h2>

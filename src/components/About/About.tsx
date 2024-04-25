@@ -13,7 +13,7 @@ function About() {
     <section id="about" className="about-section py-20">
       <Container>
         <div className="mb-10 md:mb-16 md:flex md:justify-between md:gap-[78px] xl:justify-normal xl:gap-[32px]">
-          <h2 className="text-[40px] md:text-[67px] xl:text-[98px] leading-snug md:leading-tight font-medium tracking-[-0.064em] mb-2">
+          <h2 className="uppercase text-[40px] md:text-[67px] xl:text-[98px] leading-snug md:leading-tight font-medium tracking-[-0.064em] mb-2">
             <span className="font-thin">{title[0]}</span>
             {title[1]}
           </h2>

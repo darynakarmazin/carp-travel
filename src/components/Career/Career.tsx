@@ -9,7 +9,7 @@ function Career() {
       <section id="career" className="career-section py-20">
         <Container>
           <div className="mb-8 md:flex justify-between md:mb-[5px] xl:mb-[31px]">
-            <h2 className="text-[40px] md:text-[67px] xl:text-[98px] leading-snug md:leading-tight font-medium tracking-[-0.064em] max-md:mb-6">
+            <h2 className="uppercase text-[40px] md:text-[67px] xl:text-[98px] leading-snug md:leading-tight font-medium tracking-[-0.064em] max-md:mb-6">
               <span className="font-thin">{title[0]}</span>
               {title[1]}
             </h2>
