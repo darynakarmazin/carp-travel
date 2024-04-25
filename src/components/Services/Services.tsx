@@ -77,6 +77,7 @@ function Services() {
                           width={607}
                           height={429}
                           className="block w-full min-h-[213px] h-full object-cover"
+                          priority={true}
                         />
                       </div>
 

@@ -21,6 +21,7 @@ function Gallery() {
                   width={438}
                   height={310}
                   alt="Picture of nature"
+                  priority={true}
                 />
               </li>
             );

@@ -69,6 +69,7 @@ export default function GallerySlider() {
                   width={606}
                   height={429}
                   className="w-full"
+                  priority={true}
                 />
               </div>
             )}
