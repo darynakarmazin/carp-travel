@@ -28,11 +28,11 @@ The layout is adaptive and cross-browser - mobile from 360px to 480px
 (responsive layout), tablet - 768px, desktop - 1280px. Used the Mobile first
 approach. For formation, used Prettier. Used custom fonts. Deployed on vercel.com.
 
-![Og-image](https://github.com/darynakarmazin/carp-travel/raw/main/src/app/og-image/og-image.png)
+![Og-image](https://github.com/darynakarmazin/carp-travel/raw/main/src/og-image/og-image.png)
 
 # Lighthouse report
 
-![Lighthouse](https://github.com/darynakarmazin/carp-travel/raw/main/src/app/og-image/lighthouse-report.png) 
+![Lighthouse](https://github.com/darynakarmazin/carp-travel/raw/main/src/og-image/lighthouse-report.png)
 
 Teclology stack [Next.js (using app router), Tailwind CSS, Typescript, Git, react-hooks, react-scroll, Swiper, react-hook-form]
 
@@ -40,30 +40,29 @@ Teclology stack [Next.js (using app router), Tailwind CSS, Typescript, Git, reac
 
 1. React-scroll is used for smooth navigation through sections.
 2. Not fixed. Contains logo and navigation menu.
-   ![Header](https://github.com/darynakarmazin/carp-travel/raw/main/src/app/og-image/header-hero.png)
+   ![Header](https://github.com/darynakarmazin/carp-travel/raw/main/src/og-image/header-hero.png)
 
 #About (Who we are)
 
-   ![About](https://github.com/darynakarmazin/carp-travel/raw/main/src/app/og-image/about.png)
+![About](https://github.com/darynakarmazin/carp-travel/raw/main/src/og-image/about.png)
 
 #Services (We offer)
 
 1. A slider with different background images has been implemented. Swiper is used.
-   ![Services](https://github.com/darynakarmazin/carp-travel/raw/main/src/app/og-image/services.png)
+   ![Services](https://github.com/darynakarmazin/carp-travel/raw/main/src/og-image/services.png)
 
 #Career (Choose us)
 
 1. Provided form validation using react-hook-form and Tailwind CSS to style validation errors.
-   ![Career](https://github.com/darynakarmazin/carp-travel/raw/main/src/app/og-image/сareer.png)
+   ![Career](https://github.com/darynakarmazin/carp-travel/raw/main/src/og-image/сareer.png)
 
 #Gallery (Our gallery)
 
 1. Developed image slider. Clicking or dragging causes one slide to be scrolled.
    (Used swiper library).
-   ![Gallery](https://github.com/darynakarmazin/carp-travel/raw/main/src/app/og-image/gallery.png)
+   ![Gallery](https://github.com/darynakarmazin/carp-travel/raw/main/src/og-image/gallery.png)
 
 #Contacts (Contact us)
 
 1. Provided form validation using react-hook-form and Tailwind CSS to style validation errors.
-![Contacts](https://github.com/darynakarmazin/carp-travel/raw/main/src/app/og-image/contacts.png)
-
+   ![Contacts](https://github.com/darynakarmazin/carp-travel/raw/main/src/og-image/contacts.png)

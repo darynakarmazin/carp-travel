@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     siteName: "CarpTravel",
     images: [
       {
-        url: "https://github.com/darynakarmazin/carp-travel/raw/main/src/app/og-image/og-image.png",
+        url: "https://github.com/darynakarmazin/carp-travel/raw/main/src/og-image/og-image.png",
         width: 1200,
         height: 630,
         alt: "CarpTravel",
