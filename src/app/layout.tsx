@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "CarpTravel",
   description:
     "We offer you unforgettable trips to the most beautiful parts of the Carpathians. Enjoy stunning views, exciting expeditions, and the best service!",
-  keywords: "Carpathians, Ukraine, tralel, trip",
+  keywords: "Carpathians, Ukraine, travel, trip",
   icons: {
     icon: [
       {
