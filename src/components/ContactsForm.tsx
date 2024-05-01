@@ -1,6 +1,5 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import toast, { Toaster } from "react-hot-toast";
 
@@ -23,32 +22,7 @@ function ContactsForm() {
       message: "",
     },
   });
-
-  const [formData, setFormData] = useState<Inputs>({
-    fullName: "",
-    email: "",
-    message: "",
-  });
-
-  useEffect(() => {
-    const savedFormData = localStorage.getItem("formData");
-    if (savedFormData) {
-      setFormData(JSON.parse(savedFormData));
-    }
-  }, []);
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
-
   const onSubmit: SubmitHandler<Inputs> = (data) => {
-    localStorage.setItem("formData", JSON.stringify(data));
     toast.success(`${data.fullName}, заявку успішно відтправлено!`);
     reset();
   };
@@ -78,8 +52,6 @@ function ContactsForm() {
                   message: "Incorrect name",
                 },
               })}
-              value={formData.fullName}
-              onChange={handleChange}
               placeholder="John Smith"
             />
             {errors.fullName && (
@@ -99,8 +71,6 @@ function ContactsForm() {
                   message: "Incorrect email",
                 },
               })}
-              value={formData.email}
-              onChange={handleChange}
               placeholder="johnsmith@email.com"
             />
             {errors.email && (
@@ -118,8 +88,6 @@ function ContactsForm() {
               {...register("message", {
                 required: "Message is required",
               })}
-              value={formData.message}
-              onChange={handleChange}
             />
             {errors.message && (
               <p className="absolute bottom-[-24px] right-0 text-[12px] leading-6 tracking-[0.15em] text-red-500 font-extralight">
