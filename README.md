@@ -34,7 +34,7 @@ approach. For formation, used Prettier. Used custom fonts. Deployed on vercel.co
 
 ![Lighthouse](https://github.com/darynakarmazin/carp-travel/raw/main/src/og-image/lighthouse-report.png)
 
-Teclology stack [Next.js (using app router), Tailwind CSS, Typescript, Git, react-hooks, react-scroll, Swiper, react-hook-form]
+Technology stack [Next.js (using app router), Tailwind CSS, Typescript, Git, react-hooks, react-scroll, Swiper, react-hook-form]
 
 #Header & Hero (Home)
 
